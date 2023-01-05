@@ -1,6 +1,15 @@
-# buildspace 
-### Welcome 👋
-This is the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project. 
+# How to set up
+### Step 1
+Download ZIP of this extension. (Click the big green "<> Code" button and click "Download ZIP")
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://buildspace.so/p/build-ai-writing-assistant-gpt3) and link your Discord account so you can get access to helpful channels and your instructor!
+### Step 2 
+Unzip file
+
+### Step 3
+Go to chrome://extensions/ and turn on "Developer mode" in the top right. Click "Load unpacked" in the top left. Select the newly unzipped folder 
+
+### Step 4
+The extension is now installed!. Now in gmail, start a new message, enter a subject line, highlight the text and right click it. Click "Generate email"
+
+### Step 5
+Voila!
