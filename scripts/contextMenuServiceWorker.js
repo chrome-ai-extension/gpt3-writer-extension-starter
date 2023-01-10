@@ -12,17 +12,28 @@ const getKey = () => {
 const sendMessage = (content) => {
 chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const activeTab = tabs[0].id;
-
-    chrome.tabs.sendMessage(
-    activeTab,
-    { message: 'inject', content },
-    (response) => {
-        if (response.status === 'failed') {
-        console.log('injection failed.');
-        }
+    let url = tabs[0].url;
+    console.log(url);
+    let site;
+    if(url.includes("mail.google"))
+    {
+      site = "gmail";
     }
+    else if(url.includes("outlook"))
+    {
+      site = "outlook";
+    }
+    chrome.tabs.sendMessage(
+      activeTab,
+      { message: site, content },
+      (response) => {
+        if (response.status === 'failed') {
+          console.log('injection failed.');
+        }
+      }
     );
-});
+    //console.log(tabs[0].url);
+  });
 };
 
 const generate = async (prompt) => {
