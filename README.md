@@ -25,6 +25,8 @@ Voila!
 
 #### Don't add new line at top of every generated email
 
+#### When multiple open email tabs on outlook, select correct tab
+
 #### Change logo
 
 #### Create easier way to interact with extension
