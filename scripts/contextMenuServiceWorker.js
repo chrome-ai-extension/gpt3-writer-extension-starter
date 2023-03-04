@@ -64,8 +64,8 @@ const generateCompletionAction = async (info) => {
         const basePromptPrefix = `Without including the subject line, write me an email template based off the subject line of "`;
 
         const baseCompletion = await generate(`${basePromptPrefix}${selectionText}"\n`);
-
-        sendMessage(baseCompletion.text);
+        let text = baseCompletion.text;
+        sendMessage(text.substring(1));
     } catch (error) {
         console.log(error);
         sendMessage(error.toString());
