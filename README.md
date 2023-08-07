@@ -1,4 +1,6 @@
-# How to set up
+# A chrome extension that uses AI to write your emails, write in your gmail browser window. Simply type a subject line, highlight it, right click and click 'Generate Email'
+
+## How to set up
 ### Step 1
 Download ZIP of this extension. (Click the big green "<> Code" button and click "Download ZIP")
 
